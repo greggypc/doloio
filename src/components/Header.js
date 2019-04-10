@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/images/dolo.png';
+import logo from '../assets/images/dolo-logo-white.png';
 
 class Header extends React.Component {
   render() {
@@ -11,9 +11,9 @@ class Header extends React.Component {
           <h1>We Make Donating Simple</h1>
           <p>
             Welcome to Donation Location. <br />
-            We inspire the people to make a difference in their community <br />
-            by connecting them with local organizations on one easy-to-use platform where they can donate items to
-            charities in their neighborhood.
+            We inspire the people to make a difference in their community by connecting them with local organizations
+            <br />
+            on one easy-to-use platform where they can donate items to charities in their neighborhood.
           </p>
           <ul className="actions">
             <li>
