@@ -735,12 +735,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-04-10T20:43:48.615Z",
+      "buildTime": "2019-04-12T18:29:31.781Z",
       "id": "Site",
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "17e9560f9fe4ff5aa2ab6b58519f45cc",
+        "contentDigest": "338a7d2280c6eaee3c9346e74444bca0",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -811,7 +811,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "76d8e669e86fb2db481592ad9bfa91c1"
+    "PLUGINS_HASH": "7065b34f4d01e9c344f2cc73f4962c0d"
   },
   "componentDataDependencies": {
     "nodes": {},
