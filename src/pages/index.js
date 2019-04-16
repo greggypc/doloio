@@ -8,6 +8,10 @@ import TrioPromo from '../components/TrioPromo';
 import Newsletter from '../components/Newsletter';
 import orgs from '../assets/images/orgs.json';
 
+let cardContainer = {
+  width: '70%'
+};
+
 class Homepage extends React.Component {
   state = {
     orgs
@@ -21,21 +25,25 @@ class Homepage extends React.Component {
         <Helmet title={siteTitle} />
         <Section />
         <Promo />
-        <div>
-          {this.state.orgs.map(org => (
-            <Card
-              id={org.id}
-              name={org.name}
-              key={org.id}
-              description={org.description}
-              logoURL={org.url}
-              currentNeeds={org.currentNeeds}
-              facebook={org.facebook}
-              instagram={org.instagram}
-              twitter={org.twitter}
-              linkedin={org.linkedin}
-            />
-          ))}
+        <div class="row">
+          <div class="col-sm-6">
+            {this.state.orgs.map(org => (
+              <Card
+                style={cardContainer}
+                id={org.id}
+                name={org.name}
+                key={org.id}
+                description={org.description}
+                url={org.url}
+                logoUrl={org.logoUrl}
+                currentNeeds={org.currentNeeds}
+                facebook={org.facebook}
+                instagram={org.instagram}
+                twitter={org.twitter}
+                linkedin={org.linkedin}
+              />
+            ))}
+          </div>
         </div>
         <TrioPromo />
         <Newsletter />

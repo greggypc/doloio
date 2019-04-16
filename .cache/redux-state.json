@@ -735,12 +735,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-04-12T18:29:31.781Z",
+      "buildTime": "2019-04-16T01:35:28.152Z",
       "id": "Site",
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "338a7d2280c6eaee3c9346e74444bca0",
+        "contentDigest": "489d20757205854b026d27634c3297e1",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
