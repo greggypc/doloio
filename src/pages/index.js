@@ -8,8 +8,13 @@ import TrioPromo from '../components/TrioPromo';
 import Newsletter from '../components/Newsletter';
 import orgs from '../assets/images/orgs.json';
 
-let cardContainer = {
-  width: '70%'
+let flexContainer = {
+  padding: '10px',
+  margin: '6px',
+  listStyle: 'none',
+  display: 'flex',
+  flexFlow: 'row wrap',
+  justifyContent: 'space-around'
 };
 
 class Homepage extends React.Component {
@@ -25,26 +30,37 @@ class Homepage extends React.Component {
         <Helmet title={siteTitle} />
         <Section />
         <Promo />
-        <div class="row">
-          <div class="col-sm-6">
-            {this.state.orgs.map(org => (
-              <Card
-                style={cardContainer}
-                id={org.id}
-                name={org.name}
-                key={org.id}
-                description={org.description}
-                url={org.url}
-                logoUrl={org.logoUrl}
-                currentNeeds={org.currentNeeds}
-                facebook={org.facebook}
-                instagram={org.instagram}
-                twitter={org.twitter}
-                linkedin={org.linkedin}
-              />
-            ))}
+        {/* <div class="container">
+          <div className="row gtr-150" style={flexContainer}>
+            <div className="col-4 col-12-medium"> */}
+            <section id="three" className="main style1 special">
+        <div className="grid-wrapper">
+          <div className="col-12">
+            <header className="major">
+              <h2>Community news and contacts</h2>
+            </header>
+            <p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
           </div>
-        </div>
+              {this.state.orgs.map(org => (
+                <Card
+                  //   style={cardContainer}
+                  id={org.id}
+                  name={org.name}
+                  key={org.id}
+                  description={org.description}
+                  url={org.url}
+                  logoUrl={org.logoUrl}
+                  currentNeeds={org.currentNeeds}
+                  facebook={org.facebook}
+                  instagram={org.instagram}
+                  twitter={org.twitter}
+                  linkedin={org.linkedin}
+                />
+              ))}
+            </div>
+      </section>
+          {/* </div>
+        </div> */}
         <TrioPromo />
         <Newsletter />
       </Layout>

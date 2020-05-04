@@ -297,9 +297,7 @@
         "display": "minimal-ui",
         "icon": "src/assets/images/website-icon.png"
       },
-      "nodeAPIs": [
-        "onPostBootstrap"
-      ],
+      "nodeAPIs": [],
       "browserAPIs": [],
       "ssrAPIs": [
         "onRenderBody"
@@ -364,7 +362,7 @@
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "b216ce9bd5046f605dff36c6793ff588",
+        "contentDigest": "3edbe797f7b04a791dfc978a5078403c",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -735,12 +733,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-04-16T01:35:28.152Z",
+      "buildTime": "2020-05-04T22:07:57.129Z",
       "id": "Site",
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "489d20757205854b026d27634c3297e1",
+        "contentDigest": "6efdcf52db6c4231f7cf57dfe725a7f9",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
